@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace readify_api.Controllers
 {
     [Route("api/Token")]
-    // [Produces("application/json")]
+    [Produces("application/json")]
     public class TokenController : Controller
     {
         // GET api/values
