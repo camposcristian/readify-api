@@ -7,16 +7,17 @@ using Microsoft.AspNetCore.Mvc;
 namespace readify_api.Controllers
 {
     [Route("api/ReverseWords")]
+    [Produces("application/json")]
     public class ReverseWordsController : Controller
     {
         // GET api/values
         [HttpGet]
-        public string Get(string sentence)
+        public JsonResult Get(string sentence)
         {
             var reversedWords = string.Join(" ",
                   sentence.Split(' ')
                      .Select(x => new String(x.Reverse().ToArray())));
-            return reversedWords;
+            return Json(reversedWords);
         }
     }
 }

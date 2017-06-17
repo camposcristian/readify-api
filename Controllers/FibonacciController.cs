@@ -11,6 +11,7 @@ namespace readify_api.Controllers
     {
         // GET api/values
         [HttpGet]
+        [Produces("application/json")]
         public int Get([FromQuery] int n)
         {
             int a = 0;
