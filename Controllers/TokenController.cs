@@ -13,7 +13,7 @@ namespace readify_api.Controllers
         [HttpGet]
         public string Get()
         {
-            return "\"3f774e03-084a-47de-9a55-d896b7fef2b3\"";
+            return "3f774e03-084a-47de-9a55-d896b7fef2b3";
         }
     }
 }
