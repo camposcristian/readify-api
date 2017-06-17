@@ -1,0 +1,8 @@
+c:\Projects\readify-api\bin\Debug\netcoreapp1.1\readify-api.deps.json
+c:\Projects\readify-api\bin\Debug\netcoreapp1.1\readify-api.runtimeconfig.json
+c:\Projects\readify-api\bin\Debug\netcoreapp1.1\readify-api.runtimeconfig.dev.json
+c:\Projects\readify-api\obj\Debug\netcoreapp1.1\readify-api.AssemblyInfo.cs
+c:\Projects\readify-api\bin\Debug\netcoreapp1.1\readify-api.dll
+c:\Projects\readify-api\bin\Debug\netcoreapp1.1\readify-api.pdb
+c:\Projects\readify-api\obj\Debug\netcoreapp1.1\readify-api.dll
+c:\Projects\readify-api\obj\Debug\netcoreapp1.1\readify-api.pdb
