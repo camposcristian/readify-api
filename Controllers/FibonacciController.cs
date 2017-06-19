@@ -12,18 +12,26 @@ namespace readify_api.Controllers
         // GET api/values
         [HttpGet]
         [Produces("application/json")]
-        public int Get([FromQuery] int n)
+        public ActionResult Get([FromQuery] int? n)
         {
-            int a = 0;
-            int b = 1;
+            if (n == null)
+            {
+                return NotFound();
+            }
+            if (n > 92)
+            {
+                return BadRequest();
+            }
+            Int64 a = 0;
+            Int64 b = 1;
             // In N steps compute Fibonacci sequence iteratively.
             for (int i = 0; i < n; i++)
             {
-                int temp = a;
+                Int64 temp = a;
                 a = b;
                 b = temp + b;
             }
-            return a;
+            return Ok(a);
         }
     }
 }
