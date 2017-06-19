@@ -16,7 +16,7 @@ namespace readify_api.Controllers
         {
             if (n == null)
             {
-                return NotFound();
+                return BadRequest();
             }
             if (n > 92)
             {

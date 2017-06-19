@@ -12,7 +12,7 @@ namespace readify_api.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult  Get(int a, int b, int c)
+        public ActionResult Get(int a, int b, int c)
         {
             int[] values = new int[3] { a, b, c };
 
@@ -21,10 +21,10 @@ namespace readify_api.Controllers
             //We also have a catch all at the end that returns Error if no other condition was met.
             if (a <= 0 || b <= 0 || c <= 0)
             {
-                
+
                 return Ok("\"Error\"");
             }
-            if (!(a + b > c || a + c > b || b + c > a))
+            if (!(a + b > c || a + c > b || b + c > a || a >= b + a))
             {
                 return Ok("\"Error\"");
             }

@@ -14,6 +14,10 @@ namespace readify_api.Controllers
         [HttpGet]
         public JsonResult Get(string sentence)
         {
+            if (sentence == null || sentence == "")
+            {
+                return Json("");
+            }
             var reversedWords = string.Join(" ",
                   sentence.Split(' ')
                      .Select(x => new String(x.Reverse().ToArray())));
