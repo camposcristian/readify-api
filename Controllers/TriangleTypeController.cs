@@ -22,11 +22,11 @@ namespace readify_api.Controllers
             if (a <= 0 || b <= 0 || c <= 0)
             {
                 
-                return BadRequest("\"Error\"");
+                return Ok("\"Error\"");
             }
             if (!(a + b > c || a + c > b || b + c > a))
             {
-                return BadRequest("\"Error\"");
+                return Ok("\"Error\"");
             }
             if (values.Distinct().Count() == 1) //There is only one distinct value in the set, therefore all sides are of equal length
             {
@@ -42,7 +42,7 @@ namespace readify_api.Controllers
             }
             else
             {
-                return BadRequest("\"Error\"");
+                return Ok("\"Error\"");
             }
         }
     }
